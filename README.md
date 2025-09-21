@@ -11,16 +11,16 @@
 │  │   │   └── customers.controller.js
 │  │   │
 │  │   ├── 📂 models                # definición de entidades
-│  │   │   └── (ej: customer.model.js)
+│  │   │   └── customer.model.js
 │  │   │
 │  │   ├── 📂 routes                # definición de rutas/paths de la API
-│  │   │   └── (ej: customers.routes.js)
+│  │   │   └── customers.routes.js
 │  │   │
 │  │   ├── 📂 services              # lógica de negocio (usa models y repositorios)
 │  │   │   └── customers.service.js
 │  │   │
 │  │   ├── 📂 utils                 # helpers, middlewares reutilizables
-│  │   │   └── (ej: logger.js, errorHandler.js)
+│  │   │   └── logger.js
 │  │   │
 │  │   └── app.js                   # punto de entrada de la aplicación
 │  │
@@ -34,7 +34,7 @@
 │
 │  📦 frontend
 │  ├── 📂 public
-│  │── 📂 node_modules
+│  ├── 📂 node_modules
 │  ├── 📂 src
 │  │   ├── 📂 assets                # imágenes, fuentes, íconos globales
 │  │   ├── 📂 features              # módulos/funcionalidades (domain-driven)
@@ -53,24 +53,21 @@
 │  │   │       ├── 📂 services
 │  │   │       ├── 📂 components
 │  │   │       └── 📂 hooks
-│  │   │
 │  │   ├── 📂 shared                # código compartido entre features
 │  │   │   ├── 📂 api               # HttpClient, interceptores, endpoints globales
 │  │   │   │   └── HttpClient.js
 │  │   │   ├── 📂 components        # UI compartida (botones, layouts, modales)
-│  |   |   |   └── 📂 atoms
-│  |   |   |   └── 📂 molecules
-│  |   |   |   └── 📂 organisms
+│  │   │   ├── 📂 atoms
+│  │   │   ├── 📂 molecules
+│  │   │   ├── 📂 organisms
 │  │   │   ├── 📂 config            # constantes, endpoints, env wrappers
 │  │   │   ├── 📂 hooks             # hooks reutilizables (useDebounce, useFetch)
 │  │   │   ├── 📂 providers         # contextos globales (AuthProvider, ThemeProvider)
 │  │   │   └── 📂 utils             # funciones auxiliares (formatDate, validators)
-│  │   │
 │  │   ├── App.css
 │  │   ├── App.jsx
 │  │   ├── index.css
 │  │   ├── main.jsx
-│  │
 │  ├── .env
 │  ├── .gitignore
 │  ├── package.json
