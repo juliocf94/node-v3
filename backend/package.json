@@ -5,15 +5,8 @@
   "type": "module",
   "exports": "./index.js",
   "scripts": {
-    "start": "node --loader esm-module-alias/loader --no-warnings src/app.js",
-    "dev": "nodemon --exec node --loader esm-module-alias/loader --no-warnings src/app.js"
-  },
-  "aliases": {
-    "@config": "./src/config",
-    "@controllers": "./src/controllers",
-    "@models": "./src/models",
-    "@routes": "./src/routes",
-    "@utils": "./src/utils"
+    "start": "node --loader ./my-loader.mjs --no-warnings src/app.js",
+    "dev": "nodemon --exec node --loader ./my-loader.mjs --no-warnings src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -26,7 +19,6 @@
     "mariadb": "^3.4.5"
   },
   "devDependencies": {
-    "module-alias": "^2.2.3",
     "nodemon": "^3.1.10"
   }
 }
