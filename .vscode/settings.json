@@ -1,0 +1,7 @@
+{
+    "editor.codeActionsOnSave": {
+    "source.fixAll": "true",               // Corre todos los fix disponibles
+    "source.fixAll.eslint": "true"         // Corre los fix específicos de ESLint
+  },
+    "prettier.bracketSameLine": true
+}

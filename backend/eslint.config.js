@@ -17,7 +17,7 @@ export default defineConfig([
       "no-unused-vars": "warn",
       "no-console": "off",
       semi: ["error", "always"],
-      quotes: ["error", "double"]
+      //quotes: ["error", "double"]
     }
   }
 ]);
