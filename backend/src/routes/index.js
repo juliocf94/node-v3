@@ -1,9 +1,9 @@
 // src/routes/index.js
 import { Router } from "express";
-import clientesRoutes from "./clientes.routes.js";
+import customersRouter from './customers.routes.js';
 
 const router = Router();
 
-router.use("/clientes", clientesRoutes);
+router.use("/customers", customersRouter);
 
 export default router;
