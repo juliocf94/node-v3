@@ -4,6 +4,7 @@
     "paths": {
         "@controllers/*": ["controllers/*"],
         "@routes/*": ["routes/*"],
+        "@modules/*": ["modules/*"],
         "@models/*": ["models/*"],
         "@services/*": ["services/*"],
         "@utils/*": ["utils/*"],
