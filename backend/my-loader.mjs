@@ -5,6 +5,7 @@ const aliases = {
     "@controllers": "./src/controllers",
     "@models": "./src/models",
     "@routes": "./src/routes",
+    "@services": "./src/services",
     "@utils": "./src/utils"
 };
 

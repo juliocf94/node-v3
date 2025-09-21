@@ -3,6 +3,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import routes from "@routes/index.js";
+import errorHandler from '@utils/errorHandler.js';
 
 dotenv.config();
 
@@ -12,10 +13,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Rutas
+// Routes
 app.use("/api", routes);
 
-// Puerto
+app.use(errorHandler);
+
+// Port
 const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
