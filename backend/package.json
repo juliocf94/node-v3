@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "exports": "./index.js",
+  "scripts": {
+    "start": "node --loader esm-module-alias/loader --no-warnings src/app.js",
+    "dev": "nodemon --exec node --loader esm-module-alias/loader --no-warnings src/app.js"
+  },
+  "aliases": {
+    "@config": "./src/config",
+    "@controllers": "./src/controllers",
+    "@models": "./src/models",
+    "@routes": "./src/routes",
+    "@utils": "./src/utils"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "esm-module-alias": "^2.2.1",
+    "express": "^5.1.0",
+    "mariadb": "^3.4.5"
+  },
+  "devDependencies": {
+    "module-alias": "^2.2.3",
+    "nodemon": "^3.1.10"
+  }
+}

@@ -1,0 +1,14 @@
+.env
+
+node_modules/
+package-lock.json
+
+# webjs
+.wwebjs_auth/*
+.wwebjs_cache/*
+
+.wwebjs_auth
+.wwebjs_cache
+
+# nodemon
+nodemon.json
